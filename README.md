@@ -1,16 +1,32 @@
-## Hi there 👋
+# nancary
 
-<!--
-**nancary/nancary** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**AI 产品实践者 · 电商转化 × Agent Skills × 评测体系**
 
-Here are some ideas to get you started:
+做过电商运营与一线售前（京东、图拉斯），现在把业务经验做成可复用的 Agent 能力和工具。我关心一个问题：**怎么让 AI 在真实业务里稳定干活，而不是演示时好看。**
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 正在做
+
+- **Agent 评测体系**：为 Skill 建评测集、BadCase 归因与回归记录（建设中）
+- **Skill 工程化**：一次编写、多端复用的 Skill 设计——触发条件、能力边界、版本维护
+- **电商内容 Agent**：把「消费者为什么买 / 犹豫 / 退货」写进生成逻辑，而不是堆卖点
+
+## 项目
+
+| 项目 | 它解决什么 | 边界与设计取舍 |
+|---|---|---|
+| [taobao-conversion-skills](https://github.com/nancary/taobao-conversion-skills) | 淘宝/天猫单链接的转化策略，以及主图、详情页执行 | 三道确认关卡：先定人群 / 场景 / 痛点，再谈素材。参数材质负责证明购买理由，不替代购买理由 |
+| [ai-creative-production-skills](https://github.com/nancary/ai-creative-production-skills) | AI 角色资产、故事开发与写实漫画制作的可复用 Skill | 制作阶段不替上游重写故事；柯楠案例明确区分「作品做完」与「市场验证通过」，保留停止决策 |
+| [comfyui-local-toolbox](https://github.com/nancary/comfyui-local-toolbox) | 三个零依赖本地工具：LoRA 图鉴、灵感积木、批量出图 | 纯 Python 标准库，全本地运行，数据不出机器；生成物 git-ignore |
+
+## 我的几条判断
+
+- **Skill 粒度**：大而全会降低检索效率和利用率，小而专过碎则容易重复造轮子。能解决这类问题就不再扩写范围。
+- **冗余的价值**：看似冗余的踩坑提示要保留——频繁犯错的成本高于冗余本身。
+- **做减法**：一个功能「有用但非必要、定位模糊」时，仍然应该砍掉。
+- **人机边界**：以「是否有标准解法」划分机器人自助与人工转接；超出知识库范围必须转人工。
+
+## 背景
+
+京东（1600+ 商家运营，FAQ 自助率 +40%、人工咨询 -30%）→ 图拉斯（售前转化，峰值 82%）→ 独立 AI 工具实践。
+
+> 这些仓库是公开作品集。思考过程、失败复盘和边界说明都写在各自 README 里——比功能列表更重要。
